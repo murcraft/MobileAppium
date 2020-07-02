@@ -1,6 +1,7 @@
 'use strict'
 
 const timeout = 60000
+// const Logger = require ('../utils/loggerHelper')
 
 export default class BaseElement {
 
@@ -24,25 +25,34 @@ export default class BaseElement {
   }
 
   clickElementWithoutWaiting () {
-    // Logger.Debug(`${this.name} :: Clicking`)
+    Logger.Debug(`${this.name} :: Clicking`)
     $(this.by).click()
   }
 
   clickElement () {
     this.waitForDisplayed()
-    // Logger.Debug(`${this.name} :: Clicking`)
+    Logger.Debug(`${this.name} :: Clicking`)
     $(this.by).click()
-  }
-
-  clearSetValue (value) {
-    this.waitForDisplayed()
-    // Logger.Debug(`${this.name} :: Clearing and typing text '${value}'`)
-    $(this.by).setValue(value)
   }
 
   getElementText () {
     this.waitForDisplayed()
-    // Logger.Debug(`${this.name} :: Clicking`)
-    $(this.by).getText()
+    Logger.Debug(`${this.name} :: Getting text`)
+    const textValue = $(this.by).getText()
+    Logger.Debug(`${this.name} :: Text is '${textValue}'`)
+    return textValue
+  }
+
+  getAllElementsTextArray () {
+    this.waitForDisplayed()
+    return this.getAllElementsTextArrayWithoutWaiting()
+  }
+
+  getAllElementsTextArrayWithoutWaiting () {
+    Logger.Debug(`${this.name} :: Getting text for all elements`)
+    const elements = $$(this.by)
+    const textArr = elements.map(element => element.getText())
+    Logger.Debug(`All elements text array is: ${textArr}`)
+    return textArr
   }
 }

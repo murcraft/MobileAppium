@@ -1,0 +1,523 @@
+[2020-05-25T13:31:39.879] [INFO] E2E - **************************************************
+[2020-05-25T13:31:39.882] [INFO] E2E - Suite started: Jasmine__TopLevel__Suite
+[2020-05-25T13:31:39.887] [INFO] E2E - Test started: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-05-25T13:31:51.514] [ERROR] E2E - Test failed: should be able login successfully
+[2020-05-25T13:31:51.519] [INFO] E2E - **************************************************
+[2020-05-25T13:31:51.519] [INFO] E2E - 
+[2020-05-25T13:33:29.151] [INFO] E2E - **************************************************
+[2020-05-25T13:33:29.154] [INFO] E2E - Suite started: Jasmine__TopLevel__Suite
+[2020-05-25T13:33:29.157] [INFO] E2E - Test started: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-05-25T13:34:39.954] [INFO] E2E - **************************************************
+[2020-05-25T13:34:39.956] [INFO] E2E - 
+[2020-05-25T13:35:06.709] [INFO] E2E - **************************************************
+[2020-05-25T13:35:06.713] [INFO] E2E - Suite started: Jasmine__TopLevel__Suite
+[2020-05-25T13:35:06.716] [INFO] E2E - Test started: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-05-25T13:35:56.685] [INFO] E2E - **************************************************
+[2020-05-25T13:35:56.689] [INFO] E2E - Suite started: Jasmine__TopLevel__Suite
+[2020-05-25T13:35:56.692] [INFO] E2E - Test started: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-05-25T13:36:17.540] [INFO] E2E - Test passed: should be able login successfully
+[2020-05-25T13:36:17.542] [INFO] E2E - **************************************************
+[2020-05-25T13:36:17.542] [INFO] E2E - 
+[2020-05-25T13:45:18.210] [INFO] E2E - **************************************************
+[2020-05-25T13:45:18.213] [INFO] E2E - Suite started: Jasmine__TopLevel__Suite
+[2020-05-25T13:45:18.216] [INFO] E2E - Test started: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-05-25T13:45:37.695] [INFO] E2E - Test passed: should be able login successfully
+[2020-05-25T13:45:37.697] [INFO] E2E - **************************************************
+[2020-05-25T13:45:37.697] [INFO] E2E - 
+[2020-05-25T13:47:23.821] [INFO] E2E - **************************************************
+[2020-05-25T13:47:23.825] [INFO] E2E - Suite started: Jasmine__TopLevel__Suite
+[2020-05-25T13:47:23.828] [INFO] E2E - Test started: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-05-25T13:47:42.540] [INFO] E2E - Test passed: should be able login successfully
+[2020-05-25T13:47:42.543] [INFO] E2E - **************************************************
+[2020-05-25T13:47:42.543] [INFO] E2E - 
+[2020-05-25T13:57:48.768] [INFO] E2E - **************************************************
+[2020-05-25T13:57:48.771] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-05-25T13:57:48.774] [INFO] E2E - Test started: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-05-25T13:57:53.676] [DEBUG] E2E - Log in button button :: Clicking
+[2020-05-25T13:57:55.371] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'test-web+mgmt-core@perchwell.com'
+[2020-05-25T13:57:58.113] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-05-25T13:58:01.665] [DEBUG] E2E - Log in button button :: Clicking
+[2020-05-25T13:58:08.861] [DEBUG] E2E - Log in button label :: Clicking
+[2020-05-25T13:58:09.025] [INFO] E2E - Test passed: should be able login successfully
+[2020-05-25T13:58:09.028] [INFO] E2E - **************************************************
+[2020-05-25T13:58:09.028] [INFO] E2E - 
+[2020-05-25T14:02:49.243] [INFO] E2E - **************************************************
+[2020-05-25T14:02:49.245] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-05-25T14:02:49.248] [INFO] E2E - Test started: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-05-25T14:02:54.033] [DEBUG] E2E - Log in button button :: Clicking
+[2020-05-25T14:02:55.696] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'test-web+mgmt-core@perchwell.com'
+[2020-05-25T14:02:58.384] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-05-25T14:03:00.450] [DEBUG] E2E - Hide Keyboard
+[2020-05-25T14:03:02.044] [DEBUG] E2E - Log in button button :: Clicking
+[2020-05-25T14:03:11.411] [DEBUG] E2E - Log in button label :: Clicking
+[2020-05-25T14:03:11.632] [INFO] E2E - Test passed: should be able login successfully
+[2020-05-25T14:03:11.636] [INFO] E2E - **************************************************
+[2020-05-25T14:03:11.636] [INFO] E2E - 
+[2020-05-25T14:08:29.634] [INFO] E2E - **************************************************
+[2020-05-25T14:08:29.636] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-05-25T14:08:29.639] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-05-25T14:08:34.437] [DEBUG] E2E - Log in button button :: Clicking
+[2020-05-25T14:08:36.099] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'test-web+mgmt-core@perchwell.com'
+[2020-05-25T14:08:38.921] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-05-25T14:08:40.430] [DEBUG] E2E - Hide Keyboard
+[2020-05-25T14:08:42.420] [DEBUG] E2E - Log in button button :: Clicking
+[2020-05-25T14:08:49.686] [DEBUG] E2E - Log in label :: Clicking
+[2020-05-25T14:08:49.871] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-05-25T14:08:49.873] [INFO] E2E - **************************************************
+[2020-05-25T14:08:49.873] [INFO] E2E - 
+[2020-05-25T14:13:02.905] [INFO] E2E - **************************************************
+[2020-05-25T14:13:02.907] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-05-25T14:13:02.911] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-05-25T14:13:07.880] [DEBUG] E2E - Log in button button :: Clicking
+[2020-05-25T14:13:09.385] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'test-web+mgmt-core@perchwell.com'
+[2020-05-25T14:13:12.052] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-05-25T14:13:13.530] [DEBUG] E2E - Hide Keyboard
+[2020-05-25T14:13:15.124] [DEBUG] E2E - Log in button button :: Clicking
+[2020-05-25T14:13:21.554] [DEBUG] E2E - Log in label :: Getting text
+[2020-05-25T14:13:21.724] [DEBUG] E2E - Log in label :: Text is 'Newest'
+[2020-05-25T14:13:21.725] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-05-25T14:13:21.728] [INFO] E2E - **************************************************
+[2020-05-25T14:13:21.728] [INFO] E2E - 
+[2020-06-17T14:13:08.820] [INFO] E2E - **************************************************
+[2020-06-17T14:13:08.822] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-17T14:13:08.826] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-17T14:13:08.845] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-17T14:13:08.850] [INFO] E2E - **************************************************
+[2020-06-17T14:13:08.851] [INFO] E2E - 
+[2020-06-17T14:16:23.864] [INFO] E2E - **************************************************
+[2020-06-17T14:16:23.866] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-17T14:16:23.870] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-17T14:16:23.893] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-17T14:16:23.898] [INFO] E2E - **************************************************
+[2020-06-17T14:16:23.898] [INFO] E2E - 
+[2020-06-17T14:21:22.888] [INFO] E2E - **************************************************
+[2020-06-17T14:21:22.891] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-17T14:21:22.895] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-17T14:21:22.916] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-17T14:21:22.921] [INFO] E2E - **************************************************
+[2020-06-17T14:21:22.921] [INFO] E2E - 
+[2020-06-17T14:23:25.152] [INFO] E2E - **************************************************
+[2020-06-17T14:23:25.154] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-17T14:23:25.158] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-17T14:23:25.176] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-17T14:23:25.180] [INFO] E2E - **************************************************
+[2020-06-17T14:23:25.180] [INFO] E2E - 
+[2020-06-17T14:29:19.680] [INFO] E2E - **************************************************
+[2020-06-17T14:29:19.682] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-17T14:29:19.686] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-17T14:29:19.704] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-17T14:29:19.709] [INFO] E2E - **************************************************
+[2020-06-17T14:29:19.709] [INFO] E2E - 
+[2020-06-17T17:14:52.145] [INFO] E2E - **************************************************
+[2020-06-17T17:14:52.148] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-17T17:14:52.153] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-17T17:14:52.162] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-17T17:14:52.166] [INFO] E2E - **************************************************
+[2020-06-17T17:14:52.166] [INFO] E2E - 
+[2020-06-17T17:15:48.871] [INFO] E2E - **************************************************
+[2020-06-17T17:15:48.874] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-17T17:15:48.878] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-17T17:15:48.893] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-17T17:15:48.898] [INFO] E2E - **************************************************
+[2020-06-17T17:15:48.899] [INFO] E2E - 
+[2020-06-17T17:19:05.645] [INFO] E2E - **************************************************
+[2020-06-17T17:19:05.647] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-17T17:19:05.650] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-17T17:19:05.664] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-17T17:19:05.668] [INFO] E2E - **************************************************
+[2020-06-17T17:19:05.668] [INFO] E2E - 
+[2020-06-17T17:21:20.096] [INFO] E2E - **************************************************
+[2020-06-17T17:21:20.098] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-17T17:21:20.101] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-17T17:21:20.110] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-17T17:21:20.112] [INFO] E2E - **************************************************
+[2020-06-17T17:21:20.112] [INFO] E2E - 
+[2020-06-17T17:26:00.608] [INFO] E2E - **************************************************
+[2020-06-17T17:26:00.611] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-17T17:26:00.614] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-17T17:26:00.623] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-17T17:26:00.626] [INFO] E2E - **************************************************
+[2020-06-17T17:26:00.627] [INFO] E2E - 
+[2020-06-17T17:29:08.470] [INFO] E2E - **************************************************
+[2020-06-17T17:29:08.472] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-17T17:29:08.476] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-17T17:29:10.022] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-17T17:29:10.024] [INFO] E2E - **************************************************
+[2020-06-17T17:29:10.025] [INFO] E2E - 
+[2020-06-17T17:30:58.235] [INFO] E2E - **************************************************
+[2020-06-17T17:30:58.238] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-17T17:30:58.241] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-17T17:30:59.464] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-17T17:30:59.467] [INFO] E2E - **************************************************
+[2020-06-17T17:30:59.467] [INFO] E2E - 
+[2020-06-17T17:33:21.032] [INFO] E2E - **************************************************
+[2020-06-17T17:33:21.034] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-17T17:33:21.037] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-17T17:33:21.760] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-17T17:33:21.764] [INFO] E2E - **************************************************
+[2020-06-17T17:33:21.765] [INFO] E2E - 
+[2020-06-17T18:02:08.738] [INFO] E2E - **************************************************
+[2020-06-17T18:02:08.740] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-17T18:02:08.743] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-17T18:02:09.476] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-17T18:02:09.478] [INFO] E2E - **************************************************
+[2020-06-17T18:02:09.478] [INFO] E2E - 
+[2020-06-17T18:08:42.220] [INFO] E2E - **************************************************
+[2020-06-17T18:08:42.222] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-17T18:08:42.225] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-17T18:08:43.416] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-17T18:08:43.420] [INFO] E2E - **************************************************
+[2020-06-17T18:08:43.421] [INFO] E2E - 
+[2020-06-17T18:14:14.476] [INFO] E2E - **************************************************
+[2020-06-17T18:14:14.478] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-17T18:14:14.482] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-17T18:14:15.688] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-17T18:14:15.690] [INFO] E2E - **************************************************
+[2020-06-17T18:14:15.691] [INFO] E2E - 
+[2020-06-17T18:16:06.488] [INFO] E2E - **************************************************
+[2020-06-17T18:16:06.491] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-17T18:16:06.494] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-17T18:16:07.657] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-17T18:16:07.663] [INFO] E2E - **************************************************
+[2020-06-17T18:16:07.663] [INFO] E2E - 
+[2020-06-17T18:19:07.836] [INFO] E2E - **************************************************
+[2020-06-17T18:19:07.841] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-17T18:19:07.846] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-17T18:19:09.032] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-17T18:19:09.034] [INFO] E2E - **************************************************
+[2020-06-17T18:19:09.035] [INFO] E2E - 
+[2020-06-22T11:39:22.253] [INFO] E2E - **************************************************
+[2020-06-22T11:39:22.259] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T11:39:22.263] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-22T11:39:23.418] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-22T11:39:23.426] [INFO] E2E - **************************************************
+[2020-06-22T11:39:23.426] [INFO] E2E - 
+[2020-06-22T14:11:31.648] [INFO] E2E - **************************************************
+[2020-06-22T14:11:31.651] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T14:11:31.655] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-22T14:11:36.278] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T14:11:38.388] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'test-web+mgmt-core@perchwell.com'
+[2020-06-22T14:11:41.806] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-06-22T14:11:43.588] [DEBUG] E2E - Hide Keyboard
+[2020-06-22T14:11:45.706] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T14:11:51.137] [DEBUG] E2E - Log in label :: Getting text
+[2020-06-22T14:11:51.452] [DEBUG] E2E - Log in label :: Text is 'Newest'
+[2020-06-22T14:11:51.453] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-22T14:11:51.455] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-22T14:12:52.806] [ERROR] E2E - TEST FAILED: should be able login successfully
+[2020-06-22T14:12:52.817] [INFO] E2E - **************************************************
+[2020-06-22T14:12:52.818] [INFO] E2E - 
+[2020-06-22T14:13:40.354] [INFO] E2E - **************************************************
+[2020-06-22T14:13:40.357] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T14:13:40.360] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-22T14:13:45.256] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T14:13:47.662] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'helen.kuzniatsova@perchwell.com'
+[2020-06-22T14:13:50.678] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-06-22T14:13:52.394] [DEBUG] E2E - Hide Keyboard
+[2020-06-22T14:13:54.803] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T14:14:00.575] [DEBUG] E2E - Log in label :: Getting text
+[2020-06-22T14:14:00.812] [DEBUG] E2E - Log in label :: Text is 'Newest'
+[2020-06-22T14:14:01.061] [DEBUG] E2E - Settings button button :: Clicking
+[2020-06-22T14:14:03.032] [ERROR] E2E - TEST FAILED: should be able login successfully
+[2020-06-22T14:14:03.036] [INFO] E2E - **************************************************
+[2020-06-22T14:14:03.036] [INFO] E2E - 
+[2020-06-22T14:27:52.336] [INFO] E2E - **************************************************
+[2020-06-22T14:27:52.339] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T14:27:52.342] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-22T14:27:57.054] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T14:27:58.961] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'helen.kuzniatsova@perchwell.com'
+[2020-06-22T14:28:02.929] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-06-22T14:28:04.575] [DEBUG] E2E - Hide Keyboard
+[2020-06-22T14:28:06.825] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T14:28:12.058] [DEBUG] E2E - Log in label :: Getting text
+[2020-06-22T14:28:12.299] [DEBUG] E2E - Log in label :: Text is 'Newest'
+[2020-06-22T14:28:12.573] [DEBUG] E2E - Settings button button :: Clicking
+[2020-06-22T14:29:14.784] [ERROR] E2E - TEST FAILED: should be able login successfully
+[2020-06-22T14:29:14.787] [INFO] E2E - **************************************************
+[2020-06-22T14:29:14.788] [INFO] E2E - 
+[2020-06-22T14:41:18.454] [INFO] E2E - **************************************************
+[2020-06-22T14:41:18.456] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T14:41:18.461] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-22T14:41:23.294] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T14:41:25.153] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'helen.kuzniatsova@perchwell.com'
+[2020-06-22T14:41:28.104] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-06-22T14:41:29.789] [DEBUG] E2E - Hide Keyboard
+[2020-06-22T14:41:31.820] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T14:41:37.408] [DEBUG] E2E - Log in label :: Getting text
+[2020-06-22T14:41:37.603] [DEBUG] E2E - Log in label :: Text is 'Newest'
+[2020-06-22T14:41:37.831] [DEBUG] E2E - Settings button button :: Clicking
+[2020-06-22T14:41:39.487] [DEBUG] E2E - Settings user name label :: Getting text
+[2020-06-22T14:41:39.784] [DEBUG] E2E - Settings user name label :: Text is 'Hele'
+[2020-06-22T14:42:40.738] [ERROR] E2E - TEST FAILED: should be able login successfully
+[2020-06-22T14:42:40.752] [INFO] E2E - **************************************************
+[2020-06-22T14:42:40.752] [INFO] E2E - 
+[2020-06-22T15:36:59.867] [INFO] E2E - **************************************************
+[2020-06-22T15:36:59.869] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T15:36:59.873] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-22T15:37:04.729] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T15:37:06.756] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'helen.kuzniatsova@perchwell.com'
+[2020-06-22T15:37:09.824] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-06-22T15:37:11.527] [DEBUG] E2E - Hide Keyboard
+[2020-06-22T15:37:13.645] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T15:37:19.278] [DEBUG] E2E - Log in label :: Getting text
+[2020-06-22T15:37:19.591] [DEBUG] E2E - Log in label :: Text is 'Newest'
+[2020-06-22T15:37:19.859] [DEBUG] E2E - Settings button button :: Clicking
+[2020-06-22T15:37:21.822] [DEBUG] E2E - Settings user name label :: Getting text
+[2020-06-22T15:37:22.394] [DEBUG] E2E - Settings user name label :: Text is 'Hele'
+[2020-06-22T15:37:23.041] [DEBUG] E2E - Settings views label :: Getting text for all elements
+[2020-06-22T15:37:30.205] [DEBUG] E2E - All elements text array is: Tags
+[2020-06-22T15:37:30.207] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-22T15:37:30.209] [INFO] E2E - **************************************************
+[2020-06-22T15:37:30.209] [INFO] E2E - 
+[2020-06-22T15:58:03.722] [INFO] E2E - **************************************************
+[2020-06-22T15:58:03.725] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T15:58:03.730] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-22T15:58:08.568] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T15:58:10.599] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'helen.kuzniatsova@perchwell.com'
+[2020-06-22T15:58:13.578] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-06-22T15:58:15.224] [DEBUG] E2E - Hide Keyboard
+[2020-06-22T15:58:17.126] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T15:58:22.584] [DEBUG] E2E - Log in label :: Getting text
+[2020-06-22T15:58:22.795] [DEBUG] E2E - Log in label :: Text is 'Newest'
+[2020-06-22T15:58:22.999] [DEBUG] E2E - Settings button button :: Clicking
+[2020-06-22T15:58:24.687] [DEBUG] E2E - Settings user name label :: Getting text
+[2020-06-22T15:58:47.816] [ERROR] E2E - TEST FAILED: should be able login successfully
+[2020-06-22T15:58:47.819] [INFO] E2E - **************************************************
+[2020-06-22T15:58:47.819] [INFO] E2E - 
+[2020-06-22T16:01:37.045] [INFO] E2E - **************************************************
+[2020-06-22T16:01:37.048] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T16:01:37.052] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-22T16:01:41.908] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T16:01:53.906] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'helen.kuzniatsova@perchwell.com'
+[2020-06-22T16:02:16.555] [ERROR] E2E - TEST FAILED: should be able login successfully
+[2020-06-22T16:02:16.563] [INFO] E2E - **************************************************
+[2020-06-22T16:02:16.564] [INFO] E2E - 
+[2020-06-22T16:08:14.850] [INFO] E2E - **************************************************
+[2020-06-22T16:08:14.853] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T16:08:14.856] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-22T16:08:15.645] [ERROR] E2E - TEST FAILED: should be able login successfully
+[2020-06-22T16:08:15.649] [INFO] E2E - **************************************************
+[2020-06-22T16:08:15.649] [INFO] E2E - 
+[2020-06-22T16:09:43.978] [INFO] E2E - **************************************************
+[2020-06-22T16:09:43.980] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T16:09:43.983] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-22T16:09:48.903] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T16:09:50.793] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'helen.kuzniatsova@perchwell.com'
+[2020-06-22T16:11:13.700] [INFO] E2E - **************************************************
+[2020-06-22T16:11:13.702] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T16:11:13.705] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-22T16:11:18.525] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T16:11:20.156] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'helen.kuzniatsova@perchwell.com'
+[2020-06-22T16:11:23.026] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-06-22T16:11:24.723] [DEBUG] E2E - Hide Keyboard
+[2020-06-22T16:11:26.499] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T16:11:31.321] [DEBUG] E2E - Log in label :: Getting text
+[2020-06-22T16:11:31.532] [DEBUG] E2E - Log in label :: Text is 'Newest'
+[2020-06-22T16:11:31.741] [DEBUG] E2E - Settings button button :: Clicking
+[2020-06-22T16:11:33.408] [DEBUG] E2E - Settings user name label :: Getting text
+[2020-06-22T16:11:33.701] [DEBUG] E2E - Settings user name label :: Text is 'Hele'
+[2020-06-22T16:11:34.090] [DEBUG] E2E - Settings views label :: Getting text for all elements
+[2020-06-22T16:11:35.378] [DEBUG] E2E - All elements text array is: Tags,Agents,Discussions,Ask a Question
+[2020-06-22T16:11:35.380] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-22T16:11:35.382] [INFO] E2E - **************************************************
+[2020-06-22T16:11:35.383] [INFO] E2E - 
+[2020-06-22T16:42:51.641] [INFO] E2E - **************************************************
+[2020-06-22T16:42:51.643] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T16:42:51.647] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-22T16:42:56.392] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T16:42:58.108] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'test-web+mgmt-core@perchwell.com'
+[2020-06-22T16:43:01.456] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-06-22T16:43:03.176] [DEBUG] E2E - Hide Keyboard
+[2020-06-22T16:43:04.997] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T16:43:10.472] [DEBUG] E2E - Log in label :: Getting text
+[2020-06-22T16:43:10.702] [DEBUG] E2E - Log in label :: Text is 'Newest'
+[2020-06-22T16:43:10.946] [DEBUG] E2E - Settings button button :: Clicking
+[2020-06-22T16:43:12.599] [DEBUG] E2E - Settings user name label :: Getting text
+[2020-06-22T16:43:12.924] [DEBUG] E2E - Settings user name label :: Text is 'TEST TEST-WEB+MGMT-CORE@PERCHWELL.COM'
+[2020-06-22T16:43:13.985] [DEBUG] E2E - Settings views label :: Getting text for all elements
+[2020-06-22T16:43:14.583] [DEBUG] E2E - All elements text array is: Tags,Clients,Discussions,Manage Listings,Ask a Question
+[2020-06-22T16:43:14.584] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-22T16:43:14.586] [INFO] E2E - **************************************************
+[2020-06-22T16:43:14.586] [INFO] E2E - 
+[2020-06-22T16:47:23.839] [INFO] E2E - **************************************************
+[2020-06-22T16:47:23.842] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T16:47:23.845] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-22T16:47:28.642] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T16:47:30.334] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'test-web+mgmt-core@perchwell.com'
+[2020-06-22T16:47:33.168] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-06-22T16:47:34.837] [DEBUG] E2E - Hide Keyboard
+[2020-06-22T16:47:36.643] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T16:47:42.054] [DEBUG] E2E - Log in label :: Getting text
+[2020-06-22T16:47:42.258] [DEBUG] E2E - Log in label :: Text is 'Newest'
+[2020-06-22T16:47:42.468] [DEBUG] E2E - Settings button button :: Clicking
+[2020-06-22T16:47:44.111] [DEBUG] E2E - Settings user name label :: Getting text
+[2020-06-22T16:47:44.403] [DEBUG] E2E - Settings user name label :: Text is 'TEST TEST-WEB+MGMT-CORE@PERCHWELL.COM'
+[2020-06-22T16:47:44.731] [DEBUG] E2E - Settings views label :: Getting text for all elements
+[2020-06-22T16:47:46.092] [DEBUG] E2E - All elements text array is: Tags,Clients,Discussions,Manage Listings,Ask a Question
+[2020-06-22T16:47:46.738] [ERROR] E2E - TEST FAILED: should be able login successfully
+[2020-06-22T16:47:46.742] [INFO] E2E - **************************************************
+[2020-06-22T16:47:46.742] [INFO] E2E - 
+[2020-06-22T16:48:14.854] [INFO] E2E - **************************************************
+[2020-06-22T16:48:14.857] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T16:48:14.862] [INFO] E2E - TEST STARTED: Log in as Client, should be able login successfully
+[2020-06-22T16:48:19.410] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T16:48:21.072] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'helen.kuzniatsova@perchwell.com'
+[2020-06-22T16:48:23.948] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-06-22T16:48:25.588] [DEBUG] E2E - Hide Keyboard
+[2020-06-22T16:48:27.436] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T16:48:30.968] [DEBUG] E2E - Settings button button :: Clicking
+[2020-06-22T16:48:34.722] [DEBUG] E2E - Settings user name label :: Getting text
+[2020-06-22T16:48:35.035] [DEBUG] E2E - Settings user name label :: Text is 'Hele'
+[2020-06-22T16:48:35.386] [DEBUG] E2E - Settings views label :: Getting text for all elements
+[2020-06-22T16:48:36.800] [DEBUG] E2E - All elements text array is: Tags,Agents,Discussions,Ask a Question
+[2020-06-22T16:48:37.431] [ERROR] E2E - TEST FAILED: should be able login successfully
+[2020-06-22T16:48:37.435] [INFO] E2E - **************************************************
+[2020-06-22T16:48:37.435] [INFO] E2E - 
+[2020-06-22T16:48:52.413] [INFO] E2E - **************************************************
+[2020-06-22T16:48:52.416] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T16:48:52.419] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-22T16:48:57.243] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T16:48:58.925] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'test-web+mgmt-core@perchwell.com'
+[2020-06-22T16:49:02.297] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-06-22T16:49:03.892] [DEBUG] E2E - Hide Keyboard
+[2020-06-22T16:49:06.017] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T16:49:11.352] [DEBUG] E2E - Log in label :: Getting text
+[2020-06-22T16:49:11.570] [DEBUG] E2E - Log in label :: Text is 'Newest'
+[2020-06-22T16:49:11.818] [DEBUG] E2E - Settings button button :: Clicking
+[2020-06-22T16:49:13.483] [DEBUG] E2E - Settings user name label :: Getting text
+[2020-06-22T16:49:13.849] [DEBUG] E2E - Settings user name label :: Text is 'TEST TEST-WEB+MGMT-CORE@PERCHWELL.COM'
+[2020-06-22T16:49:14.998] [DEBUG] E2E - Settings views label :: Getting text for all elements
+[2020-06-22T16:49:15.615] [DEBUG] E2E - All elements text array is: Tags,Clients,Discussions,Manage Listings,Ask a Question
+[2020-06-22T16:49:16.258] [ERROR] E2E - TEST FAILED: should be able login successfully
+[2020-06-22T16:49:16.262] [INFO] E2E - **************************************************
+[2020-06-22T16:49:16.262] [INFO] E2E - 
+[2020-06-22T16:52:12.193] [INFO] E2E - **************************************************
+[2020-06-22T16:52:12.196] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T16:52:12.198] [INFO] E2E - TEST STARTED: Log in as Client, should be able login successfully
+[2020-06-22T16:52:16.930] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T16:52:18.649] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'helen.kuzniatsova@perchwell.com'
+[2020-06-22T16:52:21.561] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-06-22T16:52:23.237] [DEBUG] E2E - Hide Keyboard
+[2020-06-22T16:52:24.985] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T16:52:30.094] [DEBUG] E2E - Settings button button :: Clicking
+[2020-06-22T16:52:31.785] [DEBUG] E2E - Settings user name label :: Getting text
+[2020-06-22T16:52:32.094] [DEBUG] E2E - Settings user name label :: Text is 'Hele'
+[2020-06-22T16:52:32.416] [DEBUG] E2E - Settings views label :: Getting text for all elements
+[2020-06-22T16:52:33.771] [DEBUG] E2E - All elements text array is: Tags,Agents,Discussions,Ask a Question
+[2020-06-22T16:52:33.773] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-22T16:52:33.775] [INFO] E2E - **************************************************
+[2020-06-22T16:52:33.775] [INFO] E2E - 
+[2020-06-22T16:52:49.440] [INFO] E2E - **************************************************
+[2020-06-22T16:52:49.443] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T16:52:49.447] [INFO] E2E - TEST STARTED: WebdriverIO and Appium, when interacting with a login form, should be able login successfully
+[2020-06-22T16:52:54.129] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T16:52:55.763] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'test-web+mgmt-core@perchwell.com'
+[2020-06-22T16:52:58.580] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-06-22T16:53:00.732] [DEBUG] E2E - Hide Keyboard
+[2020-06-22T16:53:02.362] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T16:53:07.735] [DEBUG] E2E - Log in label :: Getting text
+[2020-06-22T16:53:07.898] [DEBUG] E2E - Log in label :: Text is 'Newest'
+[2020-06-22T16:53:08.051] [DEBUG] E2E - Settings button button :: Clicking
+[2020-06-22T16:53:09.996] [DEBUG] E2E - Settings user name label :: Getting text
+[2020-06-22T16:53:10.273] [DEBUG] E2E - Settings user name label :: Text is 'TEST TEST-WEB+MGMT-CORE@PERCHWELL.COM'
+[2020-06-22T16:53:11.120] [DEBUG] E2E - Settings views label :: Getting text for all elements
+[2020-06-22T16:53:11.432] [DEBUG] E2E - All elements text array is: Tags,Clients,Discussions,Manage Listings,Ask a Question
+[2020-06-22T16:53:11.434] [INFO] E2E - TEST PASSED: should be able login successfully
+[2020-06-22T16:53:11.436] [INFO] E2E - **************************************************
+[2020-06-22T16:53:11.436] [INFO] E2E - 
+[2020-06-22T16:58:50.808] [INFO] E2E - **************************************************
+[2020-06-22T16:58:50.811] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T16:58:50.813] [INFO] E2E - TEST STARTED: Log in as Agent Check settings options
+[2020-06-22T16:58:55.561] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T16:58:57.453] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'helen.kuzniatsova@perchwell.com'
+[2020-06-22T16:59:00.437] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-06-22T16:59:02.037] [DEBUG] E2E - Hide Keyboard
+[2020-06-22T16:59:04.155] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T16:59:08.787] [DEBUG] E2E - Settings button button :: Clicking
+[2020-06-22T16:59:11.433] [DEBUG] E2E - Settings user name label :: Getting text
+[2020-06-22T16:59:11.751] [DEBUG] E2E - Settings user name label :: Text is 'Helen Kuz'
+[2020-06-22T16:59:12.088] [DEBUG] E2E - Settings views label :: Getting text for all elements
+[2020-06-22T16:59:13.589] [DEBUG] E2E - All elements text array is: Tags,Clients,Discussions,Manage Listings,Ask a Question
+[2020-06-22T16:59:13.590] [INFO] E2E - TEST PASSED: Check settings options
+[2020-06-22T16:59:13.594] [INFO] E2E - **************************************************
+[2020-06-22T16:59:13.594] [INFO] E2E - 
+[2020-06-22T16:59:29.070] [INFO] E2E - **************************************************
+[2020-06-22T16:59:29.072] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T16:59:29.075] [INFO] E2E - TEST STARTED: Log in as Client Check settings options
+[2020-06-22T16:59:33.779] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T16:59:35.493] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'helen.kuzniatsova@perchwell.com'
+[2020-06-22T16:59:37.918] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-06-22T16:59:39.342] [DEBUG] E2E - Hide Keyboard
+[2020-06-22T16:59:41.540] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T16:59:46.146] [DEBUG] E2E - Settings button button :: Clicking
+[2020-06-22T16:59:48.675] [DEBUG] E2E - Settings user name label :: Getting text
+[2020-06-22T16:59:48.983] [DEBUG] E2E - Settings user name label :: Text is 'Helen Kuz'
+[2020-06-22T16:59:49.322] [DEBUG] E2E - Settings views label :: Getting text for all elements
+[2020-06-22T16:59:51.137] [DEBUG] E2E - All elements text array is: Tags,Clients,Discussions,Manage Listings,Ask a Question
+[2020-06-22T16:59:51.926] [ERROR] E2E - TEST FAILED: Check settings options
+[2020-06-22T16:59:51.931] [INFO] E2E - **************************************************
+[2020-06-22T16:59:51.931] [INFO] E2E - 
+[2020-06-22T17:00:07.311] [INFO] E2E - **************************************************
+[2020-06-22T17:00:07.315] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T17:00:07.319] [INFO] E2E - TEST STARTED: Log in as Listing Manager Check settings options
+[2020-06-22T17:00:12.227] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T17:00:13.894] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'test-web+mgmt-core@perchwell.com'
+[2020-06-22T17:00:16.782] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-06-22T17:00:18.436] [DEBUG] E2E - Hide Keyboard
+[2020-06-22T17:00:20.258] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T17:00:23.798] [DEBUG] E2E - Settings button button :: Clicking
+[2020-06-22T17:00:26.928] [DEBUG] E2E - Settings user name label :: Getting text
+[2020-06-22T17:00:27.733] [DEBUG] E2E - Settings user name label :: Text is 'TEST TEST-WEB+MGMT-CORE@PERCHWELL.COM'
+[2020-06-22T17:00:28.339] [DEBUG] E2E - Settings views label :: Getting text for all elements
+[2020-06-22T17:00:29.696] [DEBUG] E2E - All elements text array is: Tags,Clients,Discussions,Manage Listings,Ask a Question
+[2020-06-22T17:00:29.698] [INFO] E2E - TEST PASSED: Check settings options
+[2020-06-22T17:00:29.700] [INFO] E2E - **************************************************
+[2020-06-22T17:00:29.701] [INFO] E2E - 
+[2020-06-22T17:43:08.595] [INFO] E2E - **************************************************
+[2020-06-22T17:43:08.598] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T17:43:08.601] [INFO] E2E - TEST STARTED: Log in as Agent Check settings options
+[2020-06-22T17:43:13.664] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T17:43:15.827] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'helen.kuzniatsova@perchwell.com'
+[2020-06-22T17:43:18.290] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-06-22T17:43:19.646] [DEBUG] E2E - Hide Keyboard
+[2020-06-22T17:43:22.556] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T17:43:28.186] [DEBUG] E2E - Settings button button :: Clicking
+[2020-06-22T17:43:30.146] [DEBUG] E2E - Settings user name label :: Getting text
+[2020-06-22T17:43:30.578] [DEBUG] E2E - Settings user name label :: Text is 'Helen Kuz'
+[2020-06-22T17:43:31.657] [DEBUG] E2E - Settings views label :: Getting text for all elements
+[2020-06-22T17:43:32.490] [DEBUG] E2E - All elements text array is: Tags,Clients,Discussions,Manage Listings,Ask a Question
+[2020-06-22T17:43:33.200] [ERROR] E2E - TEST FAILED: Check settings options
+[2020-06-22T17:43:33.204] [INFO] E2E - **************************************************
+[2020-06-22T17:43:33.204] [INFO] E2E - 
+[2020-06-22T17:43:49.656] [INFO] E2E - **************************************************
+[2020-06-22T17:43:49.658] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T17:43:49.661] [INFO] E2E - TEST STARTED: Log in as Client Check settings options
+[2020-06-22T17:43:54.998] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T17:43:57.513] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'helen.kuzniatsova.cl@perchwell.com'
+[2020-06-22T17:44:01.535] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-06-22T17:44:02.811] [DEBUG] E2E - Hide Keyboard
+[2020-06-22T17:44:06.103] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T17:44:11.664] [DEBUG] E2E - Settings button button :: Clicking
+[2020-06-22T17:44:13.776] [DEBUG] E2E - Settings user name label :: Getting text
+[2020-06-22T17:44:15.476] [DEBUG] E2E - Settings user name label :: Text is 'Helen'
+[2020-06-22T17:44:15.780] [DEBUG] E2E - Settings views label :: Getting text for all elements
+[2020-06-22T17:44:16.552] [DEBUG] E2E - All elements text array is: Tags,Agents,Discussions,Ask a Question
+[2020-06-22T17:44:17.270] [ERROR] E2E - TEST FAILED: Check settings options
+[2020-06-22T17:44:17.273] [INFO] E2E - **************************************************
+[2020-06-22T17:44:17.274] [INFO] E2E - 
+[2020-06-22T17:44:32.984] [INFO] E2E - **************************************************
+[2020-06-22T17:44:32.988] [INFO] E2E - SUITE STARTED: Jasmine__TopLevel__Suite
+[2020-06-22T17:44:32.993] [INFO] E2E - TEST STARTED: Log in as Listing Manager Check settings options
+[2020-06-22T17:44:37.803] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T17:44:39.759] [DEBUG] E2E - Email textBox textBox :: Clearing and typing text 'test-web+mgmt-core@perchwell.com'
+[2020-06-22T17:44:43.397] [DEBUG] E2E - Password textBox textBox :: Clearing and typing text 'perchwell'
+[2020-06-22T17:44:45.138] [DEBUG] E2E - Hide Keyboard
+[2020-06-22T17:44:47.716] [DEBUG] E2E - Log in button button :: Clicking
+[2020-06-22T17:44:53.178] [DEBUG] E2E - Settings button button :: Clicking
+[2020-06-22T17:44:55.752] [DEBUG] E2E - Settings user name label :: Getting text
+[2020-06-22T17:44:56.067] [DEBUG] E2E - Settings user name label :: Text is 'TEST TEST-WEB+MGMT-CORE@PERCHWELL.COM'
+[2020-06-22T17:44:56.457] [DEBUG] E2E - Settings views label :: Getting text for all elements
+[2020-06-22T17:44:58.268] [DEBUG] E2E - All elements text array is: Tags,Clients,Discussions,Manage Listings,Ask a Question
+[2020-06-22T17:44:58.270] [INFO] E2E - TEST PASSED: Check settings options
+[2020-06-22T17:44:58.272] [INFO] E2E - **************************************************
+[2020-06-22T17:44:58.272] [INFO] E2E - 

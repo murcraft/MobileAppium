@@ -1,41 +1,66 @@
 'use strict'
 
-import Label from '../elements/label'
+import Button from '../elements/button'
+import TextBox from '../elements/textbox'
+import BasePage from './basePage'
 
-class Login {
+class Login extends BasePage {
 
   _loginButton () {
     const elem = {
       android: 'android=new UiSelector().resourceId("com.perchwell.re.staging:id/log_in")',
       ios: ''
     }
-    console.log(new Label(elem.android, 'Log in button'))
-    return new Label(elem.android, 'Log in button')
+    return new Button(elem.android, 'Log in button')
   }
 
-  _emailInput () {
+  _emailTextBox () {
     const elem = {
       android: 'android=new UiSelector().resourceId("com.perchwell.re.staging:id/email")'
     }
-    return new Label(elem.android, 'Email textBox')
+    return new TextBox(elem.android, 'Email textBox')
   }
 
-  _passwordInput () {
+  _passwordTextBox () {
     const elem = {
       android: 'android=new UiSelector().resourceId("com.perchwell.re.staging:id/password")'
     }
-    return new Label(elem.android, 'Password textBox')
+    return new TextBox(elem.android, 'Password textBox')
   }
 
-  setEmailAndPassAsUser(user) {
-    this._emailInput().clearSetValue(user.email)
-    this._passwordInput().clearSetValue(user.pass)
-    driver.hideKeyboard()
+  _forgotPasswordButton () {
+    const elem = {
+      android: 'android=new UiSelector().resourceId("com.perchwell.re.staging:id/forgot_password")'
+    }
+    return new Button(elem.android, 'Forgot password button')
+  }
+
+  setEmail(email) {
+    this._emailTextBox().clearSetValue(email)
+  }
+
+  setPassword(pass) {
+    this._passwordTextBox().clearSetValuePass(pass)
+  }
+
+  setEmailAndPassAsUser(email, pass) {
+    this.setEmail(email)
+    this.setPassword(pass)
   }
 
   clickLoginButton () {
     this._loginButton().clickElement()
   }
+
+  clickForgotPassword () {
+    this._forgotPasswordButton().clickElement()
+  }
+
+  // setNewPassword (pass) {
+  //   this.setPasswordField(pass)
+  //   this.setConfirmPasswordField(pass)
+  //   this.clickSetPassword()
+  // }
 }
 
 export default new Login()

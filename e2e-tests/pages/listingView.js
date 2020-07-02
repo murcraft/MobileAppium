@@ -9,12 +9,13 @@ class ListingView {
       android: '~Sort Button: NEWEST',
       ios: ''
     }
-    console.log(new Label(elem.android, 'Log in button'))
-    return new Label(elem.android, 'Log in button')
+    return new Label(elem.android, 'Log in')
   }
 
   getCurrentSorting() {
-    return this.sortedLabel().getElementText()
+    const ss = this.sortedLabel().getElementText()
+    console.log(ss)
+    return ss
   }
 
 }
