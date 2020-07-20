@@ -1,12 +1,16 @@
 'use strict'
 
-const Logger = require ('../utils/loggerHelper')
+const Logger = require('../utils/loggerHelper')
 import BaseElement from './baseElement'
 
 class TextBox extends BaseElement {
 
   constructor (by, name) {
-     super(by, `${name} textBox`)
+    super(by, `${name} textBox`)
+  }
+
+  hideKeyboard () {
+    browser.hideKeyboard()
   }
 
   clearSetValue (value) {
@@ -17,8 +21,16 @@ class TextBox extends BaseElement {
 
   clearSetValuePass (value) {
     this.waitForDisplayed()
-    Logger.Debug(`${this.name} :: Clearing and typing text '${value}'`)
+    Logger.Debug(`${this.name} :: Clearing and typing pass`)
     $(this.by).setValue(value)
+    browser.pause(300)
+    this.hideKeyboard()
+  }
+
+  clearSetValueHide (value) {
+    this.clearSetValue(value)
+    browser.pause(300)
+    this.hideKeyboard()
   }
 }
 

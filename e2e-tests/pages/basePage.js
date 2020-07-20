@@ -1,16 +1,30 @@
 'use strict'
 
-const Logger = require ('../utils/loggerHelper')
+import Label from '../elements/label'
 
 class BasePage {
 
-  isKeyboardPresent () {
-    return driver.isKeyboardShown()
+  loadingElement () {
+    const elem = {
+      android: `android=resourceId("com.perchwell.re.staging:id/image")`,
+    }
+    return new Label(elem[platform], 'Loading')
   }
 
-  hideKeyboard () {
-    Logger.Debug('Hide Keyboard')
-    driver.hideKeyboard()
+  waitForLoadingElement () {
+    this.loadingElement().waitForNotDisplayed()
+  }
+
+  tapByCoordinates (x, y) {
+    Logger.Debug(`Tapping by coordinates ${x}/${y}`)
+    browser.touchPerform([
+      {
+        action: 'tap',
+        options: {
+          x: x + 1,
+          y: y + 1,
+        },
+      }])
   }
 }
 

@@ -22,16 +22,16 @@ class VariablesParser {
         process.env.env = process.env.env !== 'undefined' ? process.env.env : 'staging'
         console.log(`env - ${process.env.env}`)
         return process.env.env
+      case 'platform':
+        process.env.platform = cmdValue !== undefined ? cmdValue : process.env.platform
+        process.env.platform = process.env.platform !== 'undefined' ? process.env.platform : 'android'
+        console.log(`platform - ${process.env.platform}`)
+        return process.env.platform
       case 'logLevel':
         process.env.logLevel = cmdValue !== undefined ? cmdValue : process.env.logLevel
         process.env.logLevel = process.env.logLevel !== 'undefined' ? process.env.logLevel : 'info'
         console.log(`logLevel - ${process.env.logLevel}`)
         return process.env.logLevel
-      case 'isPostToSlack':
-        process.env.isPostToSlack = cmdValue !== undefined ? cmdValue : process.env.isPostToSlack
-        process.env.isPostToSlack = process.env.isPostToSlack !== 'undefined' ? process.env.isPostToSlack : 'false'
-        console.log(`isPostToSlack - ${process.env.isPostToSlack}`)
-        return process.env.isPostToSlack
       case 'isCleanAllure':
         process.env.isCleanAllure = cmdValue !== undefined ? cmdValue : process.env.isCleanAllure
         process.env.isCleanAllure = process.env.isCleanAllure !== 'undefined' ? process.env.isCleanAllure : 'false'

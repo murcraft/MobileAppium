@@ -10,18 +10,12 @@ log4js.configure({
   },
   categories: {
     default: { appenders: ['out', 'file'], level: 'debug' },
-    FILE: { appenders: ['file'], level: 'trace' }
   }
 })
 
 const logger = log4js.getLogger('E2E')
-const loggerFile = log4js.getLogger('FILE')
 
 class LoggerHelper {
-
-  static Trace (message) {
-    loggerFile.trace(LoggerHelper.ConvertToString(message))
-  }
 
   static Info (message) {
     logger.info(LoggerHelper.ConvertToString(message))

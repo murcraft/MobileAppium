@@ -1,7 +1,7 @@
 'use strict'
 
 const timeout = 60000
-// const Logger = require ('../utils/loggerHelper')
+const Logger = require ('../utils/loggerHelper')
 
 export default class BaseElement {
 
@@ -24,9 +24,14 @@ export default class BaseElement {
     }
   }
 
-  clickElementWithoutWaiting () {
-    Logger.Debug(`${this.name} :: Clicking`)
-    $(this.by).click()
+  waitForNotDisplayed (timeoutMs = timeout) {
+    const startTime = Date.now()
+    while (this.isElementDisplayed()) {
+      const nowTime = Date.now()
+      if (nowTime - startTime > timeoutMs) {
+        throw new Error(`${this.name} :: Element still is displayed after ${timeoutMs} ms`)
+      }
+    }
   }
 
   clickElement () {
@@ -54,5 +59,70 @@ export default class BaseElement {
     const textArr = elements.map(element => element.getText())
     Logger.Debug(`All elements text array is: ${textArr}`)
     return textArr
+  }
+
+  isElementChecked () {
+    this.waitForDisplayed()
+    const attr = $(this.by).getAttribute('checked')
+    return attr === 'true'
+  }
+
+  tapElement () {
+    this.waitForDisplayed()
+    Logger.Debug(`${this.name} :: Tapping`)
+    browser.touchAction({
+      action: 'tap',
+      element: $(this.by),
+    })
+  }
+
+  swipeUpDown (upDown, coordinate) {
+    Logger.Debug(`Swipe ${upDown}`)
+    const viewSize = browser.getWindowSize()
+    coordinate = coordinate === undefined ? viewSize.width / 2 : coordinate
+    const yDownCoordinate = viewSize.height - 320
+    const yUpCoordinate = viewSize.height / 3
+    const startPoint = upDown === 'down' ? yUpCoordinate : yDownCoordinate
+    const endPoint = upDown === 'down' ? yDownCoordinate : yUpCoordinate
+
+    browser.touchAction([
+      { action: 'press', x: coordinate, y: startPoint },
+      { action: 'wait', ms: 1000 },
+      { action: 'moveTo', x: coordinate, y: endPoint },
+      { action: 'release' },
+    ])
+  }
+
+  swipeUpVisible (coordinate) {
+    this.swipeToVisible(true, coordinate)
+  }
+
+  swipeDownVisible (coordinate) {
+    this.swipeToVisible(false, coordinate)
+  }
+
+  swipeToVisible (upDirection, coordinate) {
+    Logger.Debug(`${this.name} :: Scrolling into view`)
+    const startTime = Date.now()
+    while (!(this.isElementDisplayed())) {
+      if (upDirection) {
+        this.swipeUpDown('up', coordinate)
+      } else {
+        this.swipeUpDown('down', coordinate)
+      }
+      browser.pause(1000)
+      const endTime = Date.now()
+      if (endTime - startTime > timeout) {
+        throw new Error(`${this.name} :: Long Scrolling... Can't find the element`)
+      }
+    }
+  }
+
+  getElementLocation () {
+    this.waitForDisplayed()
+    Logger.Debug(`${this.name} :: Getting location`)
+    const location = $(this.by).getLocation()
+    Logger.Debug(`${this.name} :: Location is '${JSON.stringify(location)}'`)
+    return location
   }
 }

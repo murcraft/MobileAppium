@@ -8,32 +8,24 @@ class Settings extends BasePage {
 
   getSettingsButton () {
     const elem = {
-      android: 'android=new UiSelector().resourceId("com.perchwell.re.staging:id/profile_image_view")',
-      ios: ''
+      android: 'android=new UiSelector().resourceId("com.perchwell.re.staging:id/profile_image_view")'
     }
-    return new Button(elem.android, 'Settings button')
+    return new Button(elem[platform], 'Settings button')
   }
 
   getEmailLabel () {
     const elem = {
-      android: 'android=new UiSelector().resourceId("com.perchwell.re.staging:id/name")',
-      ios: ''
+      android: 'android=new UiSelector().resourceId("com.perchwell.re.staging:id/nameTextView")'
     }
-    return new Label(elem.android, 'Settings user name')
+    return new Label(elem[platform], 'Settings user name')
   }
 
-  getOptions () {
+  getOptions (option = '') {
     const elem = {
-      android: `android=new UiSelector().resourceId("com.perchwell.re.staging:id/textView")`,
-      ios: ''
+      android: `android=new UiSelector().resourceId("com.perchwell.re.staging:id/textView").textContains("${option}")`
     }
-    return new Label(elem.android, 'Settings views')
+    return new Label(elem[platform], 'Settings views')
   }
-
-  getOptionsText () {
-    this.getOptions().getAllElementsTextArray()
-  }
-
 }
 
 export default new Settings()

@@ -8,35 +8,28 @@ class Login extends BasePage {
 
   _loginButton () {
     const elem = {
-      android: 'android=new UiSelector().resourceId("com.perchwell.re.staging:id/log_in")',
+      android: 'android=new UiSelector().resourceId("com.perchwell.re.staging:id/logInButton")',
       ios: ''
     }
-    return new Button(elem.android, 'Log in button')
+    return new Button(elem[platform], 'Log in button')
   }
 
   _emailTextBox () {
     const elem = {
-      android: 'android=new UiSelector().resourceId("com.perchwell.re.staging:id/email")'
+      android: 'android=new UiSelector().resourceId("com.perchwell.re.staging:id/emailEditText")'
     }
-    return new TextBox(elem.android, 'Email textBox')
+    return new TextBox(elem[platform], 'Email textBox')
   }
 
   _passwordTextBox () {
     const elem = {
-      android: 'android=new UiSelector().resourceId("com.perchwell.re.staging:id/password")'
+      android: 'android=new UiSelector().resourceId("com.perchwell.re.staging:id/passwordEditText")'
     }
-    return new TextBox(elem.android, 'Password textBox')
-  }
-
-  _forgotPasswordButton () {
-    const elem = {
-      android: 'android=new UiSelector().resourceId("com.perchwell.re.staging:id/forgot_password")'
-    }
-    return new Button(elem.android, 'Forgot password button')
+    return new TextBox(elem[platform], 'Password textBox')
   }
 
   setEmail(email) {
-    this._emailTextBox().clearSetValue(email)
+    this._emailTextBox().clearSetValueHide(email)
   }
 
   setPassword(pass) {
@@ -51,16 +44,6 @@ class Login extends BasePage {
   clickLoginButton () {
     this._loginButton().clickElement()
   }
-
-  clickForgotPassword () {
-    this._forgotPasswordButton().clickElement()
-  }
-
-  // setNewPassword (pass) {
-  //   this.setPasswordField(pass)
-  //   this.setConfirmPasswordField(pass)
-  //   this.clickSetPassword()
-  // }
 }
 
 export default new Login()
