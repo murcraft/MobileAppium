@@ -26,6 +26,15 @@ class BasePage {
         },
       }])
   }
+
+  getIntsFromArr (arr) {
+    let intsArr = arr.map((x) => {
+      let result = x.match(/\d+(\.\d+)?/g)
+      return (result) ? result.join('') : 0
+    })
+    Logger.Debug(`Ints array is ${intsArr}`)
+    return intsArr
+  }
 }
 
 export default BasePage

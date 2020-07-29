@@ -1,11 +1,12 @@
 'use strict'
 
-const CONST = require('../../helpers/constHelper.js')
-
 import MainPage from '../../pages/mainPage'
 import listingView from '../../pages/listingView'
+import search from '../../pages/search'
 import searchFilters from '../../pages/searchFilters'
 import analyticsView from '../../pages/analyticsView'
+
+const CONST = require('../../helpers/constHelper.js')
 
 describe('Bathrooms Filtering: ', () => {
 
@@ -16,13 +17,12 @@ describe('Bathrooms Filtering: ', () => {
   it('log in and start new search', () => {
     MainPage.SignInAs(user)
     listingView.openListingsView()
-    listingView.openNewSearch()
+    search.openNewSearch()
   })
 
   it('set Bath Minimum 2+', () => {
     initialResults = listingView.getTotalListingsCount()
-    listingView.newSearchLabel().clickElement()
-    listingView.editSearchButton().clickElement()
+    search.editSearch()
     searchFilters.filterByBathrooms(false, '2+')
     searchFilters.clickViewListings()
     currentResults = listingView.getTotalListingsCount()
@@ -36,14 +36,13 @@ describe('Bathrooms Filtering: ', () => {
   })
 
   it('check Bath Minimum 2+', () => {
-    listingView.newSearchLabel().clickElement()
-    listingView.editSearchButton().clickElement()
+    search.editSearch()
     expect(searchFilters.isBathroomsRangeSelected()).toBe(false, 'Range Option is selected')
     expect(searchFilters.getBathroomsValue()).toEqual(['2+'], 'Incorrect Bathroom value is applied')
   })
 
   it('reset filters, check results', () => {
-    searchFilters.resetFilters().clickElement()
+    searchFilters.resetFiltersButton().clickElement()
     expect(searchFilters.getBathroomsValue()).toEqual([], 'Bathroom value is applied')
     expect(searchFilters.isBathroomsRangeSelected()).toBe(true, 'Range Option is not selected as default')
     searchFilters.clickViewListings()

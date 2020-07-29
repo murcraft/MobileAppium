@@ -12,7 +12,8 @@ module.exports = {
 
   FILTERS: Object.freeze({
     BATHROOMS: 'Bathrooms',
-    BEDROOMS: 'Bedrooms'
+    BEDROOMS: 'Bedrooms',
+    LOCATION: 'Location'
   }),
 
   VIEWS: Object.freeze({
@@ -38,11 +39,20 @@ module.exports = {
   }),
 
   ANALYTICS_TAB: Object.freeze({
-    MKT_SHARE: 'MKT SHARE'
+    MKT_SHARE: 'MKT SHARE',
+    LOCATION: 'LOCATION'
   }),
 
   ANALYTICS_OPTION: Object.freeze({
     BEDROOMS: 'BEDROOMS',
-    PRICE: 'PRICE'
+    PRICE: 'PRICE',
+    ELEVATOR: 'ELEVATOR'
+  }),
+
+  SORT_BY: Object.freeze({
+    MOST_EXPENSIVE: 'Most Expensive',
+    LEAST_EXPENSIVE: 'Least Expensive',
+    NEWEST: 'Newest',
+    BEDROOMS: 'Bedrooms'
   })
 }

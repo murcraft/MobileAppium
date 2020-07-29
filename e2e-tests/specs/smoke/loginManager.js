@@ -1,7 +1,7 @@
 'use strict'
 
-import settings from '../../pages/settings'
 import MainPage from '../../pages/mainPage'
+import settings from '../../pages/settings'
 
 describe('Log in as Listing Manager: ', () => {
 

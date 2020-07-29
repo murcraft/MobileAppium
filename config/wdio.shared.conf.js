@@ -28,8 +28,7 @@ exports.config = {
     [
       'appium', {
       command: 'appium',
-    },
-    ],
+    }],
   ],
   port: 4723,
 
@@ -48,6 +47,11 @@ exports.config = {
           CORE: { email: 'test-web+mgmt-core@perchwell.com', pass: 'perchwell' },
           AGENT: { email: 'helen.kuzniatsova@perchwell.com', pass: 'perchwell' },
         },
+        MAILTRAP: {
+          mailTrapApiToken: '5a04372410fa0e29aa08c5481866e740',
+          inboxIdStage: '239589',
+        },
+        BASE_URL: 'https://staging.perchwell.com/'
       }
   },
   /**

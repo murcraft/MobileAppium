@@ -10,7 +10,6 @@ class MainPage extends BasePage {
     login.setEmailAndPassAsUser(user.email, user.pass)
     login.clickLoginButton()
   }
-
 }
 
 export default MainPage

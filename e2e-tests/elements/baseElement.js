@@ -125,4 +125,12 @@ export default class BaseElement {
     Logger.Debug(`${this.name} :: Location is '${JSON.stringify(location)}'`)
     return location
   }
+
+  getElementSize () {
+    this.waitForDisplayed()
+    Logger.Debug(`${this.name} :: Getting location`)
+    const size = $(this.by).getSize()
+    Logger.Debug(`${this.name} :: Size is '${JSON.stringify(size)}'`)
+    return size
+  }
 }
