@@ -3,28 +3,29 @@
 import Label from '../elements/label'
 import Button from '../elements/button'
 import TextBox from '../elements/textbox'
+import BasePage from './basePage'
 
 const CONST = require('../helpers/constHelper.js')
 
-class SearchFilters {
+class SearchFilters extends BasePage {
 
   resetFiltersButton () {
     const elem = {
-      android: 'android=new UiSelector().resourceId("com.perchwell.re.staging:id/action_button")',
+      android: 'android=resourceId("com.perchwell.re.staging:id/action_button")',
     }
     return new Button(elem[platform], 'Reset Filters')
   }
 
   bathroomsOptionButton (option) {
     const elem = {
-      android: `android=new UiSelector().descriptionContains("Bathrooms Option").text("${option}")`,
+      android: `android=descriptionContains("Bathrooms Option").text("${option}")`,
     }
     return new Button(elem[platform], `Bathrooms Option '${option}' Selected`)
   }
 
   bathroomsValueButton (option, value) {
     const elem = {
-      android: `android=new UiSelector().descriptionContains("Bathrooms ${option}").text("${value}")`,
+      android: `android=descriptionContains("Bathrooms ${option}").text("${value}")`,
     }
     return new Button(elem[platform], `Bathrooms ${option} value ${value}`)
   }
@@ -45,7 +46,7 @@ class SearchFilters {
 
   filterSectionLabelByName (name) {
     const elem = {
-      android: `android=new UiSelector().resourceId("com.perchwell.re.staging:id/search_expandable_layout").childSelector(textContains("${name}"))`,
+      android: `android=resourceId("com.perchwell.re.staging:id/search_expandable_layout").childSelector(textContains("${name}"))`,
     }
     return new Label(elem[platform], `Filters section '${name}'`)
   }
@@ -96,7 +97,6 @@ class SearchFilters {
     const selection = isRange ? CONST.FILTERS_SELECTION.RANGE : CONST.FILTERS_SELECTION.MINIMUM
     const rangeParams = [...args]
     this.filterSectionLabelByName(CONST.FILTERS.BATHROOMS).swipeUpVisible()
-
     this.bathroomsOptionButton(selection).tapElement()
     this.bathroomsValueButton(selection, valueMin).tapElement()
     if (isRange) {

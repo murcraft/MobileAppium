@@ -76,12 +76,12 @@ export default class BaseElement {
     })
   }
 
-  swipeUpDown (upDown, coordinate) {
+  swipeUpDown (upDown, coordinate, startPointY, endPointY) {
     Logger.Debug(`Swipe ${upDown}`)
     const viewSize = browser.getWindowSize()
     coordinate = coordinate === undefined ? viewSize.width / 2 : coordinate
-    const yDownCoordinate = viewSize.height - 320
-    const yUpCoordinate = viewSize.height / 3
+    const yDownCoordinate = startPointY === undefined ? viewSize.height - 410 : startPointY
+    const yUpCoordinate = endPointY === undefined ? viewSize.height / 3 : endPointY
     const startPoint = upDown === 'down' ? yUpCoordinate : yDownCoordinate
     const endPoint = upDown === 'down' ? yDownCoordinate : yUpCoordinate
 
@@ -93,22 +93,22 @@ export default class BaseElement {
     ])
   }
 
-  swipeUpVisible (coordinate) {
-    this.swipeToVisible(true, coordinate)
+  swipeUpVisible (coordinate, startPoint, endPoint) {
+    this.swipeToVisible(true, coordinate, startPoint, endPoint)
   }
 
-  swipeDownVisible (coordinate) {
-    this.swipeToVisible(false, coordinate)
+  swipeDownVisible (coordinate, startPoint, endPoint) {
+    this.swipeToVisible(false, coordinate, startPoint, endPoint)
   }
 
-  swipeToVisible (upDirection, coordinate) {
+  swipeToVisible (direction, coordinate, startPoint, endPoint) {
     Logger.Debug(`${this.name} :: Scrolling into view`)
     const startTime = Date.now()
     while (!(this.isElementDisplayed())) {
-      if (upDirection) {
-        this.swipeUpDown('up', coordinate)
+      if (direction) {
+        this.swipeUpDown('up', coordinate, startPoint, endPoint)
       } else {
-        this.swipeUpDown('down', coordinate)
+        this.swipeUpDown('down', coordinate, startPoint, endPoint)
       }
       browser.pause(1000)
       const endTime = Date.now()

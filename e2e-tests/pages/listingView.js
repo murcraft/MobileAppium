@@ -9,6 +9,13 @@ const CONST = require('../helpers/constHelper.js')
 
 class ListingView extends BasePage {
 
+  getSettingsButton () {
+    const elem = {
+      android: 'android=resourceId("com.perchwell.re.staging:id/profile_image_view")'
+    }
+    return new Button(elem[platform], 'Settings button')
+  }
+
   listingCardLabelByNumber (number) {
     const elem = {
       android: `//*[@resource-id="com.perchwell.re.staging:id/foreground_container"][${number}]/..`

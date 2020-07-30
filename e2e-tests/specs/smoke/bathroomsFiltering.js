@@ -10,12 +10,11 @@ const CONST = require('../../helpers/constHelper.js')
 
 describe('Bathrooms Filtering: ', () => {
 
-  const user = PARAMS.USERS.CORE
   let initialResults = 0
   let currentResults = 0
 
   it('log in and start new search', () => {
-    MainPage.SignInAs(user)
+    MainPage.SignInAs(PARAMS.USERS.CORE)
     listingView.openListingsView()
     search.openNewSearch()
   })

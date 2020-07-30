@@ -12,7 +12,7 @@ config.capabilities = [
         'appium:deviceName': 'Helen9',
         'appium:platformVersion': '9',
         'appium:automationName': 'UiAutomator2',
-        'appium:app': path.resolve(__dirname, '../app/perchwell-staging-release-v4.8.3(272).apk'),
+        'appium:app': path.resolve(__dirname, '../app/perchwell-staging-release-v4.8.3(275).apk'),
         'appium:newCommandTimeout': 240,
         'appium:appWaitActivity': '*',
         'appium:noReset': false,

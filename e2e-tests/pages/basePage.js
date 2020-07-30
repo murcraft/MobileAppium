@@ -1,6 +1,7 @@
 'use strict'
 
 import Label from '../elements/label'
+import Button from '../elements/button'
 
 class BasePage {
 
@@ -11,8 +12,30 @@ class BasePage {
     return new Label(elem[platform], 'Loading')
   }
 
+  closeViewButton () {
+    const elem = {
+      android: `android=resourceId("com.perchwell.re.staging:id/up_button")`
+    }
+    return new Button(elem[platform], `Close view`)
+  }
+
+  titleViewLabel () {
+    const elem = {
+      android: `android=resourceId("com.perchwell.re.staging:id/toolbar").childSelector(new UiSelector().resourceId("com.perchwell.re.staging:id/title"))`
+    }
+    return new Label(elem[platform], `Title view`)
+  }
+
   waitForLoadingElement () {
     this.loadingElement().waitForNotDisplayed()
+  }
+
+  clickCloseView () {
+    this.closeViewButton().clickElement()
+  }
+
+  getTitleView () {
+    return this.titleViewLabel().getElementText()
   }
 
   tapByCoordinates (x, y) {
@@ -34,6 +57,25 @@ class BasePage {
     })
     Logger.Debug(`Ints array is ${intsArr}`)
     return intsArr
+  }
+
+  swipeToVisibleInView (swipedElement, viewElement) {
+    swipedElement.swipeUpVisible()
+    let sizeCard2 = viewElement.getElementLocation()
+    let location = swipedElement.getElementLocation()
+    let size = swipedElement.getElementSize()
+    const topPointView = sizeCard2.y
+
+    let startPoint = location.y + size.height
+    let xCoordinate = size.width / 2
+    for (let i = 0; i < 4; i++) {
+      browser.touchAction([
+        { action: 'press', x: xCoordinate, y: startPoint },
+        { action: 'wait', ms: 2000 },
+        { action: 'moveTo', x: xCoordinate, y: topPointView },
+        { action: 'release' },
+      ])
+    }
   }
 }
 

@@ -7,12 +7,10 @@ import listingView from '../../pages/listingView'
 import search from '../../pages/search'
 import listingDetails from '../../pages/listingDetails'
 
-describe('Similar Listings Search: ', () => {
-
-  const user = PARAMS.USERS.CORE
+describe('Similar Listings Search and Sorting: ', () => {
 
   it('log in and start new search', () => {
-    MainPage.SignInAs(user)
+    MainPage.SignInAs(PARAMS.USERS.CORE)
     listingView.openListingsView()
     search.openNewSearch()
   })
@@ -20,9 +18,9 @@ describe('Similar Listings Search: ', () => {
   it('select listing and check the number of selected', () => {
     listingView.selectFirstListingCheckBox().clickElement()
     const listNum = listingView.getSelectedListingNumber()
-    expect(listingView.selectedAllListingsButton().isElementDisplayed()).toBe(true, 'Select All button is ot displayed')
-    expect(listingView.deselectedAllListingsButton().isElementDisplayed()).toBe(true, 'Deselect All button is ot displayed')
-    expect(listingView.menuSelectedListingButton().isElementDisplayed()).toBe(true, 'Menu button is ot displayed')
+    expect(listingView.selectedAllListingsButton().isElementDisplayed()).toBe(true, 'Select All button is not displayed')
+    expect(listingView.deselectedAllListingsButton().isElementDisplayed()).toBe(true, 'Deselect All button is not displayed')
+    expect(listingView.menuSelectedListingButton().isElementDisplayed()).toBe(true, 'Menu button is not displayed')
     expect(listNum).toEqual('1 Selected', '1 Selected should be')
   })
 
@@ -30,21 +28,29 @@ describe('Similar Listings Search: ', () => {
     listingView.selectedAllListingsButton().clickElement()
     const listNum = listingView.getSelectedListingNumber()
     expect(listNum).toEqual('20 Selected', '20 Selected should be')
-    expect(listingView.selectedAllListingsButton().isElementDisplayed()).toBe(true, 'Select All button is ot displayed')
-    expect(listingView.deselectedAllListingsButton().isElementDisplayed()).toBe(true, 'Deselect All button is ot displayed')
-    expect(listingView.menuSelectedListingButton().isElementDisplayed()).toBe(true, 'Menu button is ot displayed')
+    expect(listingView.selectedAllListingsButton().getElementText()).toEqual('Select All', 'Select All button is not displayed')
+    expect(listingView.deselectedAllListingsButton().getElementText()).toBe('Deselect All', 'Deselect All button is not displayed')
+    expect(listingView.menuSelectedListingButton().isElementDisplayed()).toBe(true, 'Menu button is not displayed')
+  })
+
+  it('deselect all listings and check', () => {
+    listingView.deselectedAllListingsButton().clickElement()
+    expect(listingView.totalListingsCountLabel().isElementDisplayed()).toBe(true, 'Listings count is not displayed')
+    expect(listingView.selectedAllListingsButton().getElementText()).toEqual('Newest', 'Sort by button is not displayed')
+    expect(listingView.deselectedAllListingsButton().isElementDisplayed()).toBe(false, 'Deselect All button is displayed')
+    expect(listingView.menuSelectedListingButton().isElementDisplayed()).toBe(false, 'Menu button is displayed')
   })
 
   it('open Similar listings', () => {
     listingView.listingCardLabelByNumber(1).tapElement()
-    listingDetails.swipeToVisibleInDetailsView(listingDetails.similarListingsButton())
+    listingDetails.swipeToVisibleInView(listingDetails.similarListingsButton(), listingDetails.scrolledViewLabel())
     listingDetails.moreListingsLabel().clickElement()
   })
 
   it('search by BD', () => {
     const arr = listingDetails.listingAllBedsLabel().getAllElementsTextArray()
-    const search = arr[0] === 'Studio' ? arr[0] : `${arr[0]}`
-    listingDetails.searchByTextBox().clearSetValue(`${search}BD`)
+    const search = arr[0] === 'Studio' ? arr[0] : `${arr[0]}BD`
+    listingDetails.searchByTextBox().clearSetValue(`${search}`)
     const bedsArr = listingDetails.listingAllBedsLabel().getAllElementsTextArray()
     bedsArr.forEach(value => {
       expect(value).toEqual(arr[0], 'Incorrect BD value in listing')
@@ -131,5 +137,4 @@ describe('Similar Listings Search: ', () => {
       expect(parseInt(arr[i])).toBeGreaterThanOrEqual(parseInt(arr[i + 1]), 'Incorrect Bedrooms sort')
     }
   })
-
 })

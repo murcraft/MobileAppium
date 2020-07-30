@@ -1,21 +1,21 @@
 'use strict'
 
-const CONST = require('../../helpers/constHelper.js')
-
+import listingView from '../../pages/listingView'
 import MainPage from '../../pages/mainPage'
 import ClientModel from '../../models/clientModel'
 import settings from '../../pages/settings'
 import clientView from '../../pages/clientView'
 import alerts from '../../pages/alerts'
 
+const CONST = require('../../helpers/constHelper.js')
+
 describe('Add New Client: ', () => {
 
-  const user = PARAMS.USERS.CORE
   const client = ClientModel.GetRandomClient()
 
   it('Go to Clients', () => {
-    MainPage.SignInAs(user)
-    settings.getSettingsButton().clickElement()
+    MainPage.SignInAs(PARAMS.USERS.CORE)
+    listingView.getSettingsButton().clickElement()
     settings.getOptions(CONST.VIEWS.CLIENTS).clickElement()
     clientView.getAddNewClient().clickElement()
   })
@@ -70,5 +70,4 @@ describe('Add New Client: ', () => {
     expect(currentClient.email).toEqual(client.email)
     expect(currentClient.group).toEqual(client.group)
   })
-
 })

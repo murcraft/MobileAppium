@@ -90,25 +90,6 @@ class ListingDetails extends BasePage {
     }
     return new Button(elem[platform], `Sort By ${name}`)
   }
-
-  swipeToVisibleInDetailsView (elementLocation) {
-    elementLocation.swipeUpVisible()
-    let sizeCard2 = this.scrolledViewLabel().getElementLocation()
-    let location = elementLocation.getElementLocation()
-    let size = elementLocation.getElementSize()
-    const topPointView = sizeCard2.y
-
-    let startPoint = location.y + size.height
-    let xCoordinate = size.width / 2
-    for (let i = 0; i < 4; i++) {
-      browser.touchAction([
-        { action: 'press', x: xCoordinate, y: startPoint },
-        { action: 'wait', ms: 2000 },
-        { action: 'moveTo', x: xCoordinate, y: topPointView },
-        { action: 'release' },
-      ])
-    }
-  }
 }
 
 export default new ListingDetails()

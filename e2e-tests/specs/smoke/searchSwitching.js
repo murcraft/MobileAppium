@@ -9,12 +9,11 @@ import analyticsView from '../../pages/analyticsView'
 
 const CONST = require('../../helpers/constHelper.js')
 
-describe('Similar Listings Search: ', () => {
+describe('Search Switching: ', () => {
 
   const searchName1 = RandomHelper.GetRandomString('Search_1')
   const searchName2 = RandomHelper.GetRandomString('Search_2')
 
-  const user = PARAMS.USERS.CORE
   const neighborhood1 = 'Flatiron'
   const neighborhood2 = 'Battery Park'
   const neighborhood3 = 'Turtle Bay'
@@ -23,7 +22,7 @@ describe('Similar Listings Search: ', () => {
   let resultsCount2 = 0
 
   beforeAll(() => {
-    MainPage.SignInAs(user)
+    MainPage.SignInAs(PARAMS.USERS.CORE)
   })
 
   it(`check save in a new search`, () => {
@@ -95,7 +94,7 @@ describe('Similar Listings Search: ', () => {
     expect(searchFilters.getSelectedNhValues()).toEqual([neighborhood2, neighborhood3], 'Locations selected')
   })
 
-  it(`reopen first saved search and check view is image`, () => {
+  it(`reopen first saved search and check view`, () => {
     searchFilters.viewListingsButton().clickElement()
     search.openSearchByName(searchName1)
     expect(listingView.getTotalListingsCount()).toEqual(resultsCount1, 'Heading count is different')
