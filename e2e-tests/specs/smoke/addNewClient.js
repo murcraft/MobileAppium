@@ -6,6 +6,7 @@ import ClientModel from '../../models/clientModel'
 import settings from '../../pages/settings'
 import clientView from '../../pages/clientView'
 import alerts from '../../pages/alerts'
+import MailTrapHelper from '../../helpers/mailTrapHelper'
 
 const CONST = require('../../helpers/constHelper.js')
 
@@ -13,8 +14,11 @@ describe('Add New Client: ', () => {
 
   const client = ClientModel.GetRandomClient()
 
-  it('Go to Clients', () => {
+  beforeAll(() => {
     MainPage.SignInAs(PARAMS.USERS.CORE)
+  })
+
+  it('Go to Clients', () => {
     listingView.getSettingsButton().clickElement()
     settings.getOptions(CONST.VIEWS.CLIENTS).clickElement()
     clientView.getAddNewClient().clickElement()
@@ -69,5 +73,12 @@ describe('Add New Client: ', () => {
     expect(currentClient.name).toEqual(client.name.toUpperCase())
     expect(currentClient.email).toEqual(client.email)
     expect(currentClient.group).toEqual(client.group)
+  })
+
+  it('Client gets invitation in email', async () => {
+    const textMessage = await MailTrapHelper.GetTxtBodyForEmailByEmailTo(client.email, MailTrapHelper.GetSubjects().INVITATION)
+    expect(textMessage).toContain(client.name, 'Email message does not contain client name')
+    expect(textMessage).toContain('CORE Group Marketing, LLC Logo', 'Email message does not contain logo')
+    expect(textMessage).toContain('Accept Invitation', 'Email message does not contain invitation')
   })
 })

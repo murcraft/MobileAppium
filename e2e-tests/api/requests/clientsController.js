@@ -43,4 +43,4 @@ class ClientsController {
   }
 }
 
-module.exports = ClientsController//export default ClientsController
+export default ClientsController

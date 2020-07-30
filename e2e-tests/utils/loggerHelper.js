@@ -1,7 +1,7 @@
 'use strict'
 
 const log4js = require('log4js')
-const logsPath = require('path').resolve(__dirname, `../logs/app`)
+const logsPath = require('path').resolve(__dirname, `../logs/results`)
 
 log4js.configure({
   appenders: {

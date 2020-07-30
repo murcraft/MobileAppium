@@ -7,16 +7,12 @@ exports.config = {
   jasmineNodeOpts: {
     defaultTimeoutInterval: 90000,
     failFast: true,
-    expectationResultHandler: function (passed, assertion) {
-      if (passed) {
-        return
-      }
-      const errorStr = JSON.stringify(assertion, null, '    ')
-      Logger.Error(`\n${errorStr}`)
-    },
+    helpers: [
+      require.resolve('@babel/register')
+    ],
   },
   sync: true,
-  logLevel: 'error',
+  logLevel: 'info',
   deprecationWarnings: true,
   bail: 0,
   waitforTimeout: 10000,
@@ -36,23 +32,22 @@ exports.config = {
     require('@babel/register')
   },
   before: function (capabilities, specs) {
+    global.PARAMS = {
+      USERS: {
+        CORE: { email: 'test-web+mgmt-core@perchwell.com', pass: 'perchwell' },
+        AGENT: { email: 'helen.kuzniatsova@perchwell.com', pass: 'perchwell' },
+      },
+      MAILTRAP: {
+        mailTrapApiToken: '5a04372410fa0e29aa08c5481866e740',
+        inboxIdStage: '239589',
+      },
+      BASE_URL: 'https://staging.perchwell.com/'
+    }
     global.Logger = require('../e2e-tests/utils/loggerHelper')
     global.platform = VariablesParser.ParseVariables('platform'),
-      global.env = VariablesParser.ParseVariables('env'),
-      global.logLevel = VariablesParser.ParseVariables('logLevel'),
-      global.isCleanAllure = VariablesParser.ParseVariables('isCleanAllure'),
-      global.spec = VariablesParser.ParseVariables('spec'),
-      global.PARAMS = {
-        USERS: {
-          CORE: { email: 'test-web+mgmt-core@perchwell.com', pass: 'perchwell' },
-          AGENT: { email: 'helen.kuzniatsova@perchwell.com', pass: 'perchwell' },
-        },
-        MAILTRAP: {
-          mailTrapApiToken: '5a04372410fa0e29aa08c5481866e740',
-          inboxIdStage: '239589',
-        },
-        BASE_URL: 'https://staging.perchwell.com/'
-      }
+    global.env = VariablesParser.ParseVariables('env'),
+    global.logLevel = VariablesParser.ParseVariables('logLevel'),
+    global.spec = VariablesParser.ParseVariables('spec')
   },
   /**
    * Hook that gets executed before the suite starts
@@ -77,7 +72,7 @@ exports.config = {
     } else {
       try {
         browser.takeScreenshot()
-      } catch(e) {
+      } catch (e) {
         Logger.Info('Can not take a screenshot')
       }
       Logger.Error(`TEST FAILED: ${test.fullName}`)
@@ -101,6 +96,6 @@ exports.config = {
   afterCommand: function (commandName, args, result, error) {
   },
   after: function (result, capabilities, specs) {
-    Logger.Info(`Spec Result ${result}`)
+    Logger.Info(`Spec Result ${result} Failed`)
   },
 }

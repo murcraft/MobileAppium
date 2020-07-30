@@ -23,4 +23,4 @@ class AuthorizationController {
   }
 }
 
-module.exports = AuthorizationController//export default AuthorizationController
+export default AuthorizationController

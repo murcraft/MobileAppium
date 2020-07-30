@@ -32,11 +32,6 @@ class VariablesParser {
         process.env.logLevel = process.env.logLevel !== 'undefined' ? process.env.logLevel : 'info'
         console.log(`logLevel - ${process.env.logLevel}`)
         return process.env.logLevel
-      case 'isCleanAllure':
-        process.env.isCleanAllure = cmdValue !== undefined ? cmdValue : process.env.isCleanAllure
-        process.env.isCleanAllure = process.env.isCleanAllure !== 'undefined' ? process.env.isCleanAllure : 'false'
-        console.log(`isCleanAllure - ${process.env.isCleanAllure}`)
-        return process.env.isCleanAllure
       case 'spec':
         process.env.spec = cmdValue !== undefined ? cmdValue : process.env.spec
         process.env.spec = process.env.spec !== 'undefined' ? process.env.spec : 'smoke'
